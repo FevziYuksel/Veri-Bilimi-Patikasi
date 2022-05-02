@@ -31,3 +31,4 @@ def flatten(inp):
     
 print(flatten(inp))   
 
+#Write iterative version 
