@@ -6,7 +6,7 @@ out = []
 def flatten(inp):
     
     for i in inp:
-        if type(i) == tuple or type(i) == list or type(i) == set or type(i) == dict :
+        if type(i) in (tuple,list,set,dict)   :
             flatten(i)
         else:
             out.append(i)
@@ -23,7 +23,7 @@ def flatten(inp):
         inp = inp.values()
         
     for i in inp:
-        if type(i) == tuple or type(i) == list or type(i) == set or type(i) == dict:
+        if type(i) in (tuple,list,set,dict) :
             flatten(i)
         else:
             out.append(i)
